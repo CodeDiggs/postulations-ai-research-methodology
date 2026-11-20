@@ -16,7 +16,7 @@ This is an intentionally bounded archive of the original research **organization
 
 | Family | Records | Documentary question |
 | --- | --- | --- |
-| [E01](primary/) and [E01e](excerpts/E01e-2026-11-19-mathematics-specialist-role-excerpt.md) | Original owner registry, Source Intelligence instructions, falsification-first policy, coordinator checkpoint, and narrow later math-specialist excerpt | How were scientific paper responsibilities and support functions specified? |
+| [E01](primary/E01a-2026-11-15-owner-branch-registry.md) and [E01e](excerpts/E01e-2026-11-19-mathematics-specialist-role-excerpt.md) | Original owner registry, Source Intelligence instructions, falsification-first policy, coordinator checkpoint, and narrow later math-specialist excerpt | How were scientific paper responsibilities and support functions specified? |
 | [E02](primary/E02a-postulations2-candidate-p2-157.md) | Postulations2 P2-157 proposal and Paper II MAIN P2-426 owner decision | Did an auxiliary research stream generate a proposal distinct from owner scientific adoption? |
 | [E03](primary/E03a-source-intelligence-r4-dossier.md) | R4 source dossier, P2-464 physical STOP, P2-465 owner assessment and source ledger, and ten-branch delivery ledger | Was source information used while an independent physical inference remained blocked? |
 | [E04a](secondary/E04a-hourly-execution-bounded-audit.md), [E04b](secondary/E04b-2026-11-17-deidentified-schedule-snapshot.md), [E04c](excerpts/E04c-2026-11-15-ci-failed-then-passing-log-excerpts.md) | Bounded later audit, de-identified schedule states, selected Actions failure/passing lines | How do configured schedules and software status differ from delivery and scientific adoption? |
