@@ -1,8 +1,3 @@
-<!-- Private staging copy for author review, not permission to publish.
-Upstream source: CodeDiggs/postulations-dynamic-door/research/ai-methodology
-Upstream blob SHA: 94431f16c958ef6092056df8cecb2581c74f0e84
-Copy prepared for clean-history research-methodology repository. -->
-
 # Human-Initiated Multi-AI Research Coordination in the Postulations Project
 
 *A retrospective case study of human steering, research specialization, recurring coordination, and evidence exchange across nine papers*
