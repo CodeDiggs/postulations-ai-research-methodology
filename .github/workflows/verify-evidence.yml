@@ -1,0 +1,44 @@
+name: Verify publication evidence (private staging)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-evidence.yml'
+      - 'evidence/**'
+      - 'manuscript/**'
+      - 'tools/verify_evidence.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify exact source copies and limited exposure patterns
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out only this new evidence repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Run documented evidence verifier
+        run: |
+          python3 --version
+          python3 tools/verify_evidence.py
+      - name: Check manifest and repository scope
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m = json.loads(Path('evidence/PROVENANCE_MANIFEST.json').read_text())
+          items = [m['manuscript'], *m['exact_copies'], *m['derived_or_excerpted']]
+          assert not m['public_release_authorized'], 'Release gate unexpectedly changed'
+          assert len(items) == 18, f'Unexpected evidence record count: {len(items)}'
+          assert len(m['exact_copies']) == 14
+          assert len(m['derived_or_excerpted']) == 3
+          assert all(Path(x['deposited_path']).is_file() for x in items)
+          print('PASS: 18 documented exhibits, with public release still unapproved')
+          PY
