@@ -7,7 +7,7 @@ on:
       - '.github/workflows/verify-evidence.yml'
       - 'evidence/**'
       - 'manuscript/**'
-      - 'tools/verify_evidence.py'
+      - 'tools/**'
   workflow_dispatch:
 
 permissions:
@@ -23,11 +23,53 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
-          fetch-depth: 1
+          fetch-depth: 0
       - name: Run documented evidence verifier
         run: |
           python3 --version
           python3 tools/verify_evidence.py
+      - name: Scan all reachable Git-history file contents
+        run: |
+          python3 - <<'PY'
+          import re
+          import subprocess
+          import sys
+
+          def git(*args):
+              return subprocess.check_output(["git", *args])
+
+          checks = {
+              "GitHub PAT": rb"\b(?:gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{40,})\b",
+              "private-key PEM": rb"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----",
+              "OSF view-only access token": rb"(?i)view_only=[0-9a-f]{12,}",
+              "private ChatGPT Library link": rb"(?i)chatgpt\.com/library\?file_id=",
+              "AWS access-key ID": rb"\b(?:AKIA|ASIA)[0-9A-Z]{16}\b",
+              "Google API-key shape": rb"\bAIza[0-9A-Za-z_-]{35}\b",
+              "Slack access-token shape": rb"\bxox[baprs]-[0-9A-Za-z-]{18,}\b",
+              "email-like personal contact": rb"(?i)\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}\b",
+          }
+          regexes = {name: re.compile(pattern) for name, pattern in checks.items()}
+          objects = git("rev-list", "--objects", "--all").decode().splitlines()
+          blobs = set()
+          for line in objects:
+              oid = line.split(" ", 1)[0]
+              if git("cat-file", "-t", oid).strip() == b"blob":
+                  blobs.add(oid)
+          hits = []
+          total_bytes = 0
+          for oid in sorted(blobs):
+              data = git("cat-file", "blob", oid)
+              total_bytes += len(data)
+              for label, regex in regexes.items():
+                  if regex.search(data):
+                      hits.append((oid[:12], label))
+          if hits:
+              for oid, label in hits:
+                  print(f"REVIEW: historical blob {oid} matched {label}")
+              sys.exit(1)
+          print(f"PASS: {len(blobs)} unique reachable Git blobs scanned across the full fetched history ({total_bytes} bytes); no defined high-risk patterns matched")
+          print("LIMIT: patterns cannot certify privacy, copyright, intellectual-property clearance, or absence of other secret forms")
+          PY
       - name: Check manifest and repository scope
         run: |
           python3 - <<'PY'
