@@ -1,6 +1,6 @@
 # Evidence packet — retrospective methodology paper v3.4
 
-**STATUS: PRIVATE STAGING. PUBLICATION IS NOT AUTHORIZED.**
+**STATUS: PUBLIC DOCUMENTARY EVIDENCE RELEASE.** GitHub visibility was confirmed public on November 20, 2026. This is not journal publication, a science validation, or a complete independent historical audit. See [current release status](../PUBLIC_RELEASE_STATUS_2026-11-20.md).
 
 This is an intentionally bounded archive of the original research **organization**, not an attempt to validate the nine scientific Postulations hypotheses. It keeps the underlying working repository's Git history and raw research datasets private.
 
@@ -34,4 +34,4 @@ Some verbatim historical documents link to the **private working research reposi
 
 Not staged: private conversation exports, library-only files, raw third-party human datasets, uploaded research PDFs, private OSF view-only URLs, original Git commit history, full AI review transcripts, or the complete methods supplement.
 
-**Evidence release only occurs when the author explicitly approves the final inventory and repository visibility change.**
+**The author approved public visibility of this selected repository.** The original research repository remains private, and some historical outbound links are restricted. See [release status](../PUBLIC_RELEASE_STATUS_2026-11-20.md).
