@@ -12,6 +12,8 @@ This is an intentionally bounded archive of the original research **organization
 4. [Public-release checklist](../PUBLIC_RELEASE_CHECKLIST.md): rights, privacy, author signoff, and anonymous-access gates.
 5. [Offline verifier](../tools/verify_evidence.py): after cloning or downloading the **new** repository, run `python3 tools/verify_evidence.py`. This verifies the local files' Git blob hashes and screens several common high-risk patterns. It is not a comprehensive secret or rights scan.
 
+6. [Staging QA report](STAGING_QA_REPORT.md): which integrity and exposure checks were actually performed, including their limits.
+
 ## Evidence contents
 
 | Family | Records | Documentary question |
