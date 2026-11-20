@@ -1,38 +1,35 @@
-# Evidence release plan — pending author approval
+# Evidence packet — retrospective methodology paper v3.4
 
-This directory is intentionally an **index and release plan**, not a dump of the working research repository. It will support the paper's **organizational case study**, not attempt to prove its nine underlying theories.
+**STATUS: PRIVATE STAGING. PUBLICATION IS NOT AUTHORIZED.**
 
-No source document is automatically safe to publish because its contents are already cited. This repository is currently **private**.
+This is an intentionally bounded archive of the original research **organization**, not an attempt to validate the nine scientific Postulations hypotheses. It keeps the underlying working repository's Git history and raw research datasets private.
 
-## Proposed evidence exhibits
+## Start here
 
-| ID | Research-process question | Candidate evidence | Current state | Release control |
-|---|---|---|---|---|
-| E01 | How were scientific responsibilities separated? | Date-specific nine-paper scope, owner registry, and falsification-first instructions | **NOT DEPOSITED** | Review confidential project details; excerpt or recreate with traceable source hash |
-| E02 | What did a research-paper handoff actually demonstrate? | Two versioned Paper II claim/decision records (one proposal, one owner response) | **NOT DEPOSITED** | Include negative/non-adoption outcome and original source/recipient IDs without private chat exports |
-| E03 | How did Source Intelligence interact with paper owners? | One source dossier and subsequent owner decision; optional cross-paper Paper VII illustration | **NOT DEPOSITED** | Remove view-only access keys and unapproved upstream datasets, preserve ordinary scientific alternatives |
-| E04 | How did recurring research and GitHub differ? | Bounded task-status summary, delivery-status coding, branch rules, CI trigger configuration | **NOT DEPOSITED** | Publish only aggregated/redacted scheduler fields; do not publish raw task JSON or chat destinations |
-| E05 | What did independent-role scientific criticism look like? | Bounded UQCP draft-change example, separate from methodology-paper participant review | **NOT DEPOSITED** | Author approves PDF rights; do not claim message authentication or independent empirical replication |
-| E06 | What did the retrospective audit find? | Frozen sampling protocol, missing-source counts, participant access-test limitations | **NOT DEPOSITED** | Treat self-audit as a limitation, not system-level success or scientific quality estimate |
+1. [Claim-to-evidence map](CLAIM_TO_EVIDENCE.md): match a manuscript statement to the exact documentary exhibit and see what is still unknown.
+2. [Machine-readable provenance manifest](PROVENANCE_MANIFEST.json): for every copied document, its source path, original Git blob SHA-1, deposited Git blob SHA-1, classification, and modification status.
+3. [Redaction and exclusion ledger](REDACTION_AND_EXCLUSION_LOG.md): what was removed or withheld, why, and how that affects external verification.
+4. [Public-release checklist](../PUBLIC_RELEASE_CHECKLIST.md): rights, privacy, author signoff, and anonymous-access gates.
+5. [Offline verifier](../tools/verify_evidence.py): after cloning or downloading the **new** repository, run `python3 tools/verify_evidence.py`. This verifies the local files' Git blob hashes and screens several common high-risk patterns. It is not a comprehensive secret or rights scan.
 
-## Required fields for every actual exhibit
+## Evidence contents
 
-- Stable exhibit ID and original source document identity (relative path or immutable source link).
-- Source version or original Git blob/commit checksum, and deposited exhibit SHA-256.
-- What was directly inspected, and what the exhibit actually establishes.
-- Redactions, omissions and their reasons (including metadata that might identify participants).
-- Provenance, date type (author assertion vs. repository commit vs. original message), rights/attribution terms.
-- Evidence limitations: observed / coordinator-reported / participant-reported / unavailable.
-- Author approval of the exact released bytes and any third-party material.
+| Family | Records | Documentary question |
+| --- | --- | --- |
+| [E01](primary/) and [E01e](excerpts/E01e-2026-11-19-mathematics-specialist-role-excerpt.md) | Original owner registry, Source Intelligence instructions, falsification-first policy, coordinator checkpoint, and narrow later math-specialist excerpt | How were scientific paper responsibilities and support functions specified? |
+| [E02](primary/E02a-postulations2-candidate-p2-157.md) | Postulations2 P2-157 proposal and Paper II MAIN P2-426 owner decision | Did an auxiliary research stream generate a proposal distinct from owner scientific adoption? |
+| [E03](primary/E03a-source-intelligence-r4-dossier.md) | R4 source dossier, P2-464 physical STOP, P2-465 owner assessment and source ledger, and ten-branch delivery ledger | Was source information used while an independent physical inference remained blocked? |
+| [E04a](secondary/E04a-hourly-execution-bounded-audit.md), [E04b](secondary/E04b-2026-11-17-deidentified-schedule-snapshot.md), [E04c](excerpts/E04c-2026-11-15-ci-failed-then-passing-log-excerpts.md) | Bounded later audit, de-identified schedule states, selected Actions failure/passing lines | How do configured schedules and software status differ from delivery and scientific adoption? |
+| [E05](secondary/E05a-nine-paper-candidate-matrix.md) and [checkpoint](primary/E05b-2026-11-15-nine-paper-checkpoint.md) | Original nine-paper coordination checkpoint and later cross-paper document matrix | Do all nine paper streams have a sampled candidate with explicit limitation/negative-rival status? |
 
-## Explicit exclusions without separate permission
+At staging, **14 documents and the manuscript** were exact-byte copies verified to have matching Git blob hashes. **Three** other exhibits are selected, edited or de-identified records. The exact source text of the three edited records cannot be reconstructed solely from this packet.
 
-- Private ChatGPT or other service conversation exports; memory histories; participant private records.
-- Access-bearing OSF or other credential-like URLs and tokens.
-- Raw public-source research datasets with license conditions not independently cleared for redistribution.
-- Full Git history, archived branches, whole PR discussions, bulk CI logs, or binary/encoded experiment archives.
-- Unsubmitted scientific manuscripts unrelated to documenting the AI research method.
+## Important limits
 
-## Release rule
+The source Git blob identity verifies the copied *repository text*, not the original private human-AI conversation, calculations, causal effectiveness, the validity of a postulation, or scientific adoption. The selected scheduler table is not the original scheduler service response. The nine-paper matrix is a purposive coordinator audit and the underlying nine science PR sources were not mirrored here.
 
-A reviewer must be able to examine a claim against its authentic, source-grounded exhibit. An AI-generated summary of a source does **not** replace that source. If a source cannot be distributed, state the access limitation, retain its checksum if appropriate, and refrain from claiming independent validation.
+Some verbatim historical documents link to the **private working research repository**, so those historical outbound links may remain unavailable to an unauthenticated reader. The relevant excerpted material in this evidence packet is linked internally through the claim map; external access must be checked separately.
+
+Not staged: private conversation exports, library-only files, raw third-party human datasets, uploaded research PDFs, private OSF view-only URLs, original Git commit history, full AI review transcripts, or the complete methods supplement.
+
+**Evidence release only occurs when the author explicitly approves the final inventory and repository visibility change.**
