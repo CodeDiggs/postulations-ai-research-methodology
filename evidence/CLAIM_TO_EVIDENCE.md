@@ -1,0 +1,31 @@
+# Claim-to-evidence map — methodology paper v3.4
+
+**Status:** Private staging; claims are document-based and bounded. No scientific theory or AI-workflow advantage is validated here. All linked internal exhibits currently require repository access.
+
+**Reading key:** `PRIMARY` = an original historical project/governance/owner document copied exactly from its source Git blob; `SECONDARY` = a later coordinator-produced retrospective audit; `DERIVED` = selected or de-identified transcription. PRIMARY is **not equivalent** to independent human authentication or the truth of the underlying science.
+
+| Manuscript location / claim | Released exhibits | What can be inspected now | What remains outside this public-design packet |
+| --- | --- | --- | --- |
+| §§4.1, 6.1 — distinct scientific paper owners, two Paper II streams, coordinator responsibilities | [E01a](primary/E01a-2026-11-15-owner-branch-registry.md), [E01d](primary/E01d-2026-11-15-coordination-checkpoint.md) | Original dated branch registry and an observed coordination checkpoint; names of nine scopes and separate owner branches | Proving every conversation implemented the policy in every run |
+| §§4.1, 6.2 — dedicated cross-paper Source Intelligence | [E01b](primary/E01b-2026-11-15-source-intelligence-role.md), [E03e](primary/E03e-source-intelligence-r4-branch-delivery-ledger.md) | Original startup instructions and later ledger claiming ten review-only branch packets | Complete independent verification of all ten recipients; original human authorization message |
+| §§4.1, 6.4 — falsification-first and math-only iteration stopping rule | [E01c](primary/E01c-2026-11-15-falsification-first-protocol.md), [E01d](primary/E01d-2026-11-15-coordination-checkpoint.md) | Original policy requiring rivals, explicit negative results, and decision-relevant research | Program-wide compliance rate or evidence that the policy improved outcomes |
+| §6.1 — separate Paper II proposal not automatically adopted | [E02a](primary/E02a-postulations2-candidate-p2-157.md), [E02b](primary/E02b-paper-ii-main-p2-426-decision.md) | Original proposal from Postulations2 and MAIN's later owner decision | Independent algebra/code rerun; proof of a Dynamic Door mechanism |
+| §6.2 — one source dossier used while a distinct physical STOP remained | [E03a](primary/E03a-source-intelligence-r4-dossier.md), [E03b](primary/E03b-paper-ii-main-p2-464-stop.md), [E03c](primary/E03c-paper-ii-main-p2-465-review.md), [E03d](primary/E03d-paper-ii-main-p2-465-source-ledger.md), [E03e](primary/E03e-source-intelligence-r4-branch-delivery-ledger.md) | Dated source dossier, preserved STOP, P2-465 use/reference, and author-branch distribution ledger | Full original scientific paper/dataset downloads and independent reconstruction; documents do not certify the theory |
+| §4.2 and §6.3 — ten enabled hourly paper-owner tasks, but delivery unknown | [E04a](secondary/E04a-hourly-execution-bounded-audit.md), [E04b](secondary/E04b-2026-11-17-deidentified-schedule-snapshot.md) | A later methods audit and a de-identified tabulation from the selected Nov. 17 extract; ten enabled owner tasks, 12 inspected delivery fields unknown | Original private scheduler JSON and underlying automation tool returns; continuous execution or correct-chat delivery |
+| §6.3 — selected software replay failure and later green CI | [E04c](excerpts/E04c-2026-11-15-ci-failed-then-passing-log-excerpts.md) | Directly selected lines from two recorded Actions logs; one of nine tests failed and later nine passed | Full job logs, PR patch/replay source and causal attribution; no scientific validation |
+| §6.1 — all nine paper topics produced a bounded checkpoint candidate | [E05b](primary/E05b-2026-11-15-nine-paper-checkpoint.md), [E05a](secondary/E05a-nine-paper-candidate-matrix.md) | Source checkpoint plus coordinator's one-per-paper retrospective source list; reported drafts, negative rivals, and no extraordinary validation | Original nine unmerged PR heads, proofs and raw data (deliberately not mirrored); no claim of nine independent successes |
+| §4.3 — later cross-paper mathematics role | [E01e](excerpts/E01e-2026-11-19-mathematics-specialist-role-excerpt.md) | Selected, exactly identified source-prompt lines showing proposed role and two-math-iteration pivot | Original author creation turn, complete prompt, independent specialist outputs or measured benefit |
+| §§3 and 6.5 — early origins and four-round UQCP cross-AI reviewer history | **Not yet released** | Manuscript's qualified account only | Original manuscripts, reviewer messages and human historical authentication; publication rights and privacy review pending |
+| §4.3 — author's strategic leadership and individual interventions | Some evidence in E01a–E01d, E03e | Recorded operating policies and role boundaries | Complete original human authorization messages, human ratification of individual science claims |
+| §5 and Supplement — later participant review, event codes and access test | **Not yet released** | Manuscript distinguishes these as methods-paper study apparatus | Raw review messages, original methodology corpus and participant-blind independent audit |
+
+## Interpretation guardrails
+
+- A preserved Git blob can authenticate *this text*, not the private chat in which the event was originally initiated or its scientific outcome.
+- Coordinator records may describe work done elsewhere. Such entries remain **reports** unless the original owner decision is independently mirrored.
+- The record type “GitHub PR draft” is not acceptance by an owner, human, journal or experimental participant.
+- **E04b** is a derivative table. Inspecting its counts is not the same as independently accessing the original scheduler JSON.
+- **E04c** contains log excerpts, not a reproducible cloned environment.
+- No underlying theory is promoted to validated status by the existence of these files.
+
+Before public release, the author must approve this exact evidence scope, complete the [public-release checklist](../PUBLIC_RELEASE_CHECKLIST.md), and verify access anonymously. Any additional primary records must be screened, documented in the manifest, and explicitly included in a new release version.
