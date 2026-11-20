@@ -1,10 +1,10 @@
 # Claim-to-evidence map — methodology paper v3.4
 
-**Status:** Private staging; claims are document-based and bounded. No scientific theory or AI-workflow advantage is validated here. All linked internal exhibits currently require repository access.
+**Status:** PUBLIC documentary evidence snapshot (GitHub repository visibility confirmed 20 November 2026). Claims are document-based and bounded; public GitHub metadata does not establish anonymous access to each file. No scientific theory or AI-workflow advantage is validated here.
 
 **Reading key:** `PRIMARY` = an original historical project/governance/owner document copied exactly from its source Git blob; `SECONDARY` = a later coordinator-produced retrospective audit; `DERIVED` = selected or de-identified transcription. PRIMARY is **not equivalent** to independent human authentication or the truth of the underlying science.
 
-| Manuscript location / claim | Released exhibits | What can be inspected now | What remains outside this public-design packet |
+| Manuscript location / claim | Released exhibits | What can be inspected now | What remains outside this public evidence packet |
 | --- | --- | --- | --- |
 | §§4.1, 6.1 — distinct scientific paper owners, two Paper II streams, coordinator responsibilities | [E01a](primary/E01a-2026-11-15-owner-branch-registry.md), [E01d](primary/E01d-2026-11-15-coordination-checkpoint.md) | Original dated branch registry and an observed coordination checkpoint; names of nine scopes and separate owner branches | Proving every conversation implemented the policy in every run |
 | §§4.1, 6.2 — dedicated cross-paper Source Intelligence | [E01b](primary/E01b-2026-11-15-source-intelligence-role.md), [E03e](primary/E03e-source-intelligence-r4-branch-delivery-ledger.md) | Original startup instructions and later ledger claiming ten review-only branch packets | Complete independent verification of all ten recipients; original human authorization message |
@@ -28,4 +28,8 @@
 - **E04c** contains log excerpts, not a reproducible cloned environment.
 - No underlying theory is promoted to validated status by the existence of these files.
 
-Before public release, the author must approve this exact evidence scope, complete the [public-release checklist](../PUBLIC_RELEASE_CHECKLIST.md), and verify access anonymously. Any additional primary records must be screened, documented in the manifest, and explicitly included in a new release version.
+The author approved release of the existing bounded documentary snapshot; see the [dated public-release status](../PUBLIC_RELEASE_STATUS_2026-11-20.md). External anonymous access to individual files remains to be confirmed. Any **future expansion** of the evidence packet requires separate author review, source and rights screening, redaction, manifest changes and renewed integrity verification.
+
+## Later author-review manuscript revisions (not included in this evidence snapshot)
+
+This archive retains the **developmental v3.4 manuscript** and its documented exhibit set. A separate Zenodo v1.0 Revision A author-review candidate dated 20 November 2026 incorporated a later mathematics-specialist output account, and a subsequent Revision B editorial consistency update corrected prepublication wording and nine-paper/ten-owner counting. These author-review candidates are **not** themselves deposited into this public repository by this status correction. S-GOV-02–S-GOV-04 identify additional private mathematical and owner-review records; those source bytes remain restricted. The public evidence packet must not be represented as a complete independent verification of either revision or the underlying science.
