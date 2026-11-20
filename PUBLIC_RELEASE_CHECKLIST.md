@@ -4,6 +4,15 @@
 
 The original working repository has extensive research history (previous inventory: 1,072 branch refs), third-party source materials under differing terms, private research records, and an access-bearing OSF view-only URL in an internal retrieval log. Those files must **not** be imported automatically.
 
+## Staging actions completed (not release authorization)
+
+- [x] Created an independent private repository without importing the working research history.
+- [x] Staged the unchanged v3.4 Markdown manuscript and 14 byte-identical original/secondary documentary records.
+- [x] Staged three limited excerpted or de-identified records with an explicit redaction/exclusion ledger.
+- [x] Verified 15 exact-copy Git blobs matched their original Git source blobs (14 evidence files and the manuscript).
+- [x] Added a claim-to-evidence map, per-file provenance manifest and offline content verifier.
+- [ ] Conduct the full final pre-publication privacy/IP/rights review and independently test anonymous access (requires explicit public-release approval first).
+
 ## Required gates before public visibility
 
 - [ ] **Author scope approval.** Confirm the exact manuscript/version and what the public archive is permitted to include; distinguish paper evidence from substantive unpublished research.
