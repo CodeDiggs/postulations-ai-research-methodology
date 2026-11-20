@@ -28,7 +28,8 @@ The paper studies **the research process**, not whether the nine underlying scie
 - [Provenance manifest](evidence/PROVENANCE_MANIFEST.json) — source Git blob IDs, deposited blob IDs, and redaction status.
 - [Redaction/exclusion log](evidence/REDACTION_AND_EXCLUSION_LOG.md) — what is omitted or withheld.
 - [Offline verification script](tools/verify_evidence.py) — check local staged bytes against their Git content hashes.
-- [Staging QA report](evidence/STAGING_QA_REPORT.md) — verified checks, inaccessible source classes, and remaining publication gates.
+- [Staging QA report](evidence/STAGING_QA_REPORT.md) — original staged-document checks and source limitations.
+- [Final release-gate decision](PUBLIC_RELEASE_DECISION_2026-11-19.md) — successful GitHub Actions verification, reachable-history scan, and remaining author decisions.
 - [Public-release checklist](PUBLIC_RELEASE_CHECKLIST.md) — review gates before any visibility change.
 
 **Not included:** private conversation exports, third-party raw research downloads, participant datasets, archive access keys, original raw scheduler data, Git history from the working repository, or the unreviewed methodology supplement. The full paper remains at v3.4; this staging work does not constitute a new manuscript version.
