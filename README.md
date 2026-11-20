@@ -23,10 +23,14 @@ The paper studies **the research process**, not whether the nine underlying scie
 ## Contents (staging)
 
 - [Manuscript v3.4](manuscript/Postulations_AI_Methodology_Manuscript_v3_4.md) — unchanged Markdown text imported from the separately maintained working repository (verified matching Git blob SHA).
-- [Evidence plan](evidence/README.md) — selected source categories and the verification requirements for each.
+- [Evidence reader guide](evidence/README.md) — 14 exact-copy exhibits, three excerpted/derived exhibits, and the evidence-release boundaries.
+- [Claim-to-evidence map](evidence/CLAIM_TO_EVIDENCE.md) — which core manuscript claims the packet does and does not support.
+- [Provenance manifest](evidence/PROVENANCE_MANIFEST.json) — source Git blob IDs, deposited blob IDs, and redaction status.
+- [Redaction/exclusion log](evidence/REDACTION_AND_EXCLUSION_LOG.md) — what is omitted or withheld.
+- [Offline verification script](tools/verify_evidence.py) — check local staged bytes against their Git content hashes.
 - [Public-release checklist](PUBLIC_RELEASE_CHECKLIST.md) — review gates before any visibility change.
 
-**Not included:** private conversation exports, source-research downloads, human research datasets, archive access links, raw scheduler data, Git history from the working repository, or the unreviewed evidence supplement.
+**Not included:** private conversation exports, third-party raw research downloads, participant datasets, archive access keys, original raw scheduler data, Git history from the working repository, or the unreviewed methodology supplement. The full paper remains at v3.4; this staging work does not constitute a new manuscript version.
 
 ## Separation from the working research repository
 
