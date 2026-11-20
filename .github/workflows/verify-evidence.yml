@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/verify-evidence.yml'
+      - 'README.md'
+      - 'PUBLIC_RELEASE_CHECKLIST.md'
+      - 'PUBLIC_RELEASE_DECISION_2026-11-19.md'
       - 'evidence/**'
       - 'manuscript/**'
       - 'tools/**'
