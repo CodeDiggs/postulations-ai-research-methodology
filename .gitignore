@@ -1,0 +1,26 @@
+# Do not stage unreviewed private materials
+private/
+unreviewed/
+scratch/
+staging-local/
+*.env
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.b64
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+*.tar
+*.gz
+*.log
+.DS_Store
+__pycache__/
+.venv/
+# This is only an accidental-commit guard. It is NOT a security scan.
