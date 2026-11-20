@@ -1,10 +1,10 @@
 # Human-Initiated Multi-AI Research Coordination in the Postulations Project
 
-**Repository role:** A clean-history, initially private staging repository for the paper *Human-Initiated Multi-AI Research Coordination in the Postulations Project* and a narrowly scoped, reproducible evidence release.
+**Repository role:** A clean-history, now-public evidence repository for the paper *Human-Initiated Multi-AI Research Coordination in the Postulations Project* and a narrowly scoped, reproducible evidence release.
 
 **Owner and manuscript author:** John Giles  
 **Current manuscript:** v3.4 (developmental; not yet submitted)  
-**Release status:** **PRIVATE STAGING — NOT APPROVED FOR PUBLIC VISIBILITY**
+**Release status:** **PUBLIC EVIDENCE SNAPSHOT — GitHub visibility confirmed November 20, 2026. Journal submission not completed.** [Current release status](PUBLIC_RELEASE_STATUS_2026-11-20.md).
 
 ## What this paper investigates
 
@@ -20,7 +20,7 @@ This retrospective case study examines how one human researcher organized and ad
 
 The paper studies **the research process**, not whether the nine underlying scientific postulations are true. Documented source receipt, review, computational testing, and scientific adoption are not interchangeable. The case does not establish that this workflow outperforms alternatives.
 
-## Contents (staging)
+## Contents (public evidence snapshot)
 
 - [Manuscript v3.4](manuscript/Postulations_AI_Methodology_Manuscript_v3_4.md) — unchanged Markdown text imported from the separately maintained working repository (verified matching Git blob SHA).
 - [Evidence reader guide](evidence/README.md) — 14 exact-copy exhibits, three excerpted/derived exhibits, and the evidence-release boundaries.
@@ -42,8 +42,8 @@ Each future released exhibit should identify its original source version and hav
 
 ## Reproducibility and publication status
 
-The eventual public release should permit an outside researcher to inspect the specific evidence behind the case study's claims, within the permissions actually held. A previous participant access test could directly check only 4 of 15 sampled claims; that was **not an independent human audit**.
+This public snapshot provides selected text records supporting the case study. Direct anonymous web retrieval remains unverified from this chat because the web reader returned cache misses for the newly public repository. Historical links back to the working repository may require permissions. A previous participant access test could directly check only 4 of 15 sampled claims; that was **not an independent human audit**.
 
 Publication-oriented AI-use disclosures, human accountability statements, source-access decisions and any applicable license remain to be finalized by the author. There is **no repository-wide open license assigned here** at this stage.
 
-**Do not make the repository public solely because a manuscript file is present.** Complete [PUBLIC_RELEASE_CHECKLIST.md](PUBLIC_RELEASE_CHECKLIST.md) and obtain explicit human approval first.
+**The author approved this limited public release.** The [pre-release checklist](PUBLIC_RELEASE_CHECKLIST.md) and [pre-release decision](PUBLIC_RELEASE_DECISION_2026-11-19.md) are historical documents. See the [current public-release status](PUBLIC_RELEASE_STATUS_2026-11-20.md) for the publication and access limitations.
